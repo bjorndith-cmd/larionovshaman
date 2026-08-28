@@ -128,7 +128,7 @@
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
       <div class="lg:col-span-5 relative">
         <div class="w-full h-[480px] rounded-2xl overflow-hidden glass-panel p-3 shadow-2xl bg-cardDark">
-          <img src="avatar.jpg" alt="Вячеслав Ларионов" class="w-full h-full object-cover rounded-xl filter grayscale contrast-125 hover:grayscale-0 transition duration-700" onerror="handleImgError(this)">
+          <img id="avatarImg" src="avatar.jpeg" alt="Вячеслав Ларионов" data-base="avatar" class="w-full h-full object-cover rounded-xl filter grayscale contrast-125 hover:grayscale-0 transition duration-700" onerror="handleSmartImgError(this)">
         </div>
         <div class="absolute -bottom-6 -right-2 glass-panel p-5 rounded-xl border border-accentGold/50 shadow-2xl">
           <p class="text-xs uppercase tracking-widest text-nordicMist font-semibold">Арт-директор</p>
@@ -226,140 +226,140 @@
       
       <!-- Карточки 1-20 -->
       <div class="photo-card glass-panel rounded-2xl overflow-hidden cursor-pointer relative group bg-cardDark" onclick="openModal(1)">
-        <img id="img-1" src="photo1.jpg" alt="Работа 1" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" onerror="handleImgError(this)">
+        <img id="img-1" src="photo1.jpg" alt="Работа 1" data-base="photo1" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" onerror="handleSmartImgError(this)">
         <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-6">
           <span class="text-accentGold text-sm uppercase tracking-widest font-bold">Работа #1</span>
         </div>
       </div>
 
       <div class="photo-card glass-panel rounded-2xl overflow-hidden cursor-pointer relative group bg-cardDark" onclick="openModal(2)">
-        <img id="img-2" src="photo2.jpg" alt="Работа 2" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" onerror="handleImgError(this)">
+        <img id="img-2" src="photo2.jpg" alt="Работа 2" data-base="photo2" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" onerror="handleSmartImgError(this)">
         <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-6">
           <span class="text-accentGold text-sm uppercase tracking-widest font-bold">Работа #2</span>
         </div>
       </div>
 
       <div class="photo-card glass-panel rounded-2xl overflow-hidden cursor-pointer relative group bg-cardDark" onclick="openModal(3)">
-        <img id="img-3" src="photo3.jpg" alt="Работа 3" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" onerror="handleImgError(this)">
+        <img id="img-3" src="photo3.jpg" alt="Работа 3" data-base="photo3" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" onerror="handleSmartImgError(this)">
         <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-6">
           <span class="text-accentGold text-sm uppercase tracking-widest font-bold">Работа #3</span>
         </div>
       </div>
 
       <div class="photo-card glass-panel rounded-2xl overflow-hidden cursor-pointer relative group bg-cardDark" onclick="openModal(4)">
-        <img id="img-4" src="photo4.jpg" alt="Работа 4" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" onerror="handleImgError(this)">
+        <img id="img-4" src="photo4.jpg" alt="Работа 4" data-base="photo4" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" onerror="handleSmartImgError(this)">
         <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-6">
           <span class="text-accentGold text-sm uppercase tracking-widest font-bold">Работа #4</span>
         </div>
       </div>
 
       <div class="photo-card glass-panel rounded-2xl overflow-hidden cursor-pointer relative group bg-cardDark" onclick="openModal(5)">
-        <img id="img-5" src="photo5.jpg" alt="Работа 5" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" onerror="handleImgError(this)">
+        <img id="img-5" src="photo5.jpg" alt="Работа 5" data-base="photo5" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" onerror="handleSmartImgError(this)">
         <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-6">
           <span class="text-accentGold text-sm uppercase tracking-widest font-bold">Работа #5</span>
         </div>
       </div>
 
       <div class="photo-card glass-panel rounded-2xl overflow-hidden cursor-pointer relative group bg-cardDark" onclick="openModal(6)">
-        <img id="img-6" src="photo6.jpg" alt="Работа 6" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" onerror="handleImgError(this)">
+        <img id="img-6" src="photo6.jpg" alt="Работа 6" data-base="photo6" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" onerror="handleSmartImgError(this)">
         <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-6">
           <span class="text-accentGold text-sm uppercase tracking-widest font-bold">Работа #6</span>
         </div>
       </div>
 
       <div class="photo-card glass-panel rounded-2xl overflow-hidden cursor-pointer relative group bg-cardDark" onclick="openModal(7)">
-        <img id="img-7" src="photo7.jpg" alt="Работа 7" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" onerror="handleImgError(this)">
+        <img id="img-7" src="photo7.jpg" alt="Работа 7" data-base="photo7" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" onerror="handleSmartImgError(this)">
         <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-6">
           <span class="text-accentGold text-sm uppercase tracking-widest font-bold">Работа #7</span>
         </div>
       </div>
 
       <div class="photo-card glass-panel rounded-2xl overflow-hidden cursor-pointer relative group bg-cardDark" onclick="openModal(8)">
-        <img id="img-8" src="photo8.jpg" alt="Работа 8" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" onerror="handleImgError(this)">
+        <img id="img-8" src="photo8.jpg" alt="Работа 8" data-base="photo8" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" onerror="handleSmartImgError(this)">
         <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-6">
           <span class="text-accentGold text-sm uppercase tracking-widest font-bold">Работа #8</span>
         </div>
       </div>
 
       <div class="photo-card glass-panel rounded-2xl overflow-hidden cursor-pointer relative group bg-cardDark" onclick="openModal(9)">
-        <img id="img-9" src="photo9.jpg" alt="Работа 9" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" onerror="handleImgError(this)">
+        <img id="img-9" src="photo9.jpg" alt="Работа 9" data-base="photo9" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" onerror="handleSmartImgError(this)">
         <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-6">
           <span class="text-accentGold text-sm uppercase tracking-widest font-bold">Работа #9</span>
         </div>
       </div>
 
       <div class="photo-card glass-panel rounded-2xl overflow-hidden cursor-pointer relative group bg-cardDark" onclick="openModal(10)">
-        <img id="img-10" src="photo10.jpg" alt="Работа 10" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" onerror="handleImgError(this)">
+        <img id="img-10" src="photo10.jpg" alt="Работа 10" data-base="photo10" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" onerror="handleSmartImgError(this)">
         <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-6">
           <span class="text-accentGold text-sm uppercase tracking-widest font-bold">Работа #10</span>
         </div>
       </div>
 
       <div class="photo-card glass-panel rounded-2xl overflow-hidden cursor-pointer relative group bg-cardDark" onclick="openModal(11)">
-        <img id="img-11" src="photo11.jpg" alt="Работа 11" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" onerror="handleImgError(this)">
+        <img id="img-11" src="photo11.jpg" alt="Работа 11" data-base="photo11" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" onerror="handleSmartImgError(this)">
         <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-6">
           <span class="text-accentGold text-sm uppercase tracking-widest font-bold">Работа #11</span>
         </div>
       </div>
 
       <div class="photo-card glass-panel rounded-2xl overflow-hidden cursor-pointer relative group bg-cardDark" onclick="openModal(12)">
-        <img id="img-12" src="photo12.jpg" alt="Работа 12" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" onerror="handleImgError(this)">
+        <img id="img-12" src="photo12.jpg" alt="Работа 12" data-base="photo12" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" onerror="handleSmartImgError(this)">
         <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-6">
           <span class="text-accentGold text-sm uppercase tracking-widest font-bold">Работа #12</span>
         </div>
       </div>
 
       <div class="photo-card glass-panel rounded-2xl overflow-hidden cursor-pointer relative group bg-cardDark" onclick="openModal(13)">
-        <img id="img-13" src="photo13.jpg" alt="Работа 13" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" onerror="handleImgError(this)">
+        <img id="img-13" src="photo13.jpg" alt="Работа 13" data-base="photo13" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" onerror="handleSmartImgError(this)">
         <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-6">
           <span class="text-accentGold text-sm uppercase tracking-widest font-bold">Работа #13</span>
         </div>
       </div>
 
       <div class="photo-card glass-panel rounded-2xl overflow-hidden cursor-pointer relative group bg-cardDark" onclick="openModal(14)">
-        <img id="img-14" src="photo14.jpg" alt="Работа 14" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" onerror="handleImgError(this)">
+        <img id="img-14" src="photo14.jpg" alt="Работа 14" data-base="photo14" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" onerror="handleSmartImgError(this)">
         <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-6">
           <span class="text-accentGold text-sm uppercase tracking-widest font-bold">Работа #14</span>
         </div>
       </div>
 
       <div class="photo-card glass-panel rounded-2xl overflow-hidden cursor-pointer relative group bg-cardDark" onclick="openModal(15)">
-        <img id="img-15" src="photo15.jpg" alt="Работа 15" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" onerror="handleImgError(this)">
+        <img id="img-15" src="photo15.jpg" alt="Работа 15" data-base="photo15" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" onerror="handleSmartImgError(this)">
         <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-6">
           <span class="text-accentGold text-sm uppercase tracking-widest font-bold">Работа #15</span>
         </div>
       </div>
 
       <div class="photo-card glass-panel rounded-2xl overflow-hidden cursor-pointer relative group bg-cardDark" onclick="openModal(16)">
-        <img id="img-16" src="photo16.jpg" alt="Работа 16" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" onerror="handleImgError(this)">
+        <img id="img-16" src="photo16.jpg" alt="Работа 16" data-base="photo16" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" onerror="handleSmartImgError(this)">
         <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-6">
           <span class="text-accentGold text-sm uppercase tracking-widest font-bold">Работа #16</span>
         </div>
       </div>
 
       <div class="photo-card glass-panel rounded-2xl overflow-hidden cursor-pointer relative group bg-cardDark" onclick="openModal(17)">
-        <img id="img-17" src="photo17.jpg" alt="Работа 17" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" onerror="handleImgError(this)">
+        <img id="img-17" src="photo17.jpg" alt="Работа 17" data-base="photo17" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" onerror="handleImgError(this)">
         <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-6">
           <span class="text-accentGold text-sm uppercase tracking-widest font-bold">Работа #17</span>
         </div>
       </div>
 
       <div class="photo-card glass-panel rounded-2xl overflow-hidden cursor-pointer relative group bg-cardDark" onclick="openModal(18)">
-        <img id="img-18" src="photo18.jpg" alt="Работа 18" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" onerror="handleImgError(this)">
+        <img id="img-18" src="photo18.jpg" alt="Работа 18" data-base="photo18" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" onerror="handleSmartImgError(this)">
         <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-6">
           <span class="text-accentGold text-sm uppercase tracking-widest font-bold">Работа #18</span>
         </div>
       </div>
 
       <div class="photo-card glass-panel rounded-2xl overflow-hidden cursor-pointer relative group bg-cardDark" onclick="openModal(19)">
-        <img id="img-19" src="photo19.jpg" alt="Работа 19" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" onerror="handleImgError(this)">
+        <img id="img-19" src="photo19.jpg" alt="Работа 19" data-base="photo19" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" onerror="handleSmartImgError(this)">
         <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-6">
           <span class="text-accentGold text-sm uppercase tracking-widest font-bold">Работа #19</span>
         </div>
       </div>
 
       <div class="photo-card glass-panel rounded-2xl overflow-hidden cursor-pointer relative group bg-cardDark" onclick="openModal(20)">
-        <img id="img-20" src="photo20.jpg" alt="Работа 20" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" onerror="handleImgError(this)">
+        <img id="img-20" src="photo20.jpg" alt="Работа 20" data-base="photo20" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" onerror="handleSmartImgError(this)">
         <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-6">
           <span class="text-accentGold text-sm uppercase tracking-widest font-bold">Работа #20</span>
         </div>
@@ -453,7 +453,7 @@
         &#10095;
       </button>
       
-      <img id="modalImg" alt="Work" class="max-h-[80vh] max-w-full object-contain rounded-xl border border-accentGold/30 shadow-2xl" onerror="handleImgError(this)">
+      <img id="modalImg" alt="Work" class="max-h-[80vh] max-w-full object-contain rounded-xl border border-accentGold/30 shadow-2xl" onerror="handleSmartImgError(this)">
       <div id="modalCaption" class="text-accentGold font-cinzel text-lg mt-4 tracking-widest font-semibold"></div>
       
       <button onclick="closeModal()" class="absolute -top-12 right-0 text-white text-3xl font-light hover:text-accentGold transition p-2">&times;</button>
@@ -464,22 +464,43 @@
   <script>
     let currentIndex = 1;
     const totalPhotos = 20;
-    const extensions = ['.jpg', '.JPG', '.jpeg', '.JPEG', '.png', '.PNG', '.webp'];
 
-    // Каскадная проверка всех возможных форматов и регистров расширений
-    function handleImgError(img) {
-      if (!img.dataset.extIndex) {
-        img.dataset.extIndex = "0";
+    // Список всех возможных вариантов путей и расширений
+    const possiblePaths = [
+      '', 'img/', 'images/', 'photos/'
+    ];
+    const possibleExtensions = [
+      '.jpeg', '.jpg', '.JPG', '.JPEG', '.png', '.PNG', '.webp'
+    ];
+
+    // Генерируем массив всех комбинаций
+    function getCandidateUrls(baseName) {
+      const candidates = [];
+      possiblePaths.forEach(path => {
+        possibleExtensions.forEach(ext => {
+          candidates.push(path + baseName + ext);
+        });
+      });
+      return candidates;
+    }
+
+    // Умный перебор путей
+    function handleSmartImgError(img) {
+      const baseName = img.dataset.base || 'photo' + currentIndex;
+      if (!img.dataset.candidates) {
+        const candidates = getCandidateUrls(baseName);
+        img.dataset.candidates = JSON.stringify(candidates);
+        img.dataset.candIndex = "0";
       }
-      let idx = parseInt(img.dataset.extIndex, 10);
-      idx++;
 
-      if (idx < extensions.length) {
-        img.dataset.extIndex = idx.toString();
-        const baseName = img.src.substring(0, img.src.lastIndexOf('.'));
-        img.src = baseName + extensions[idx];
+      const candidates = JSON.parse(img.dataset.candidates);
+      let idx = parseInt(img.dataset.candIndex, 10);
+
+      if (idx < candidates.length) {
+        img.dataset.candIndex = (idx + 1).toString();
+        img.src = candidates[idx];
       } else {
-        img.onerror = null; // Защита от бесконечного цикла
+        img.onerror = null; // прекратить попытки, если ни один вариант не найден
       }
     }
 
@@ -497,7 +518,11 @@
       const modalCaption = document.getElementById('modalCaption');
       const currentGalleryImg = document.getElementById('img-' + currentIndex);
 
-      // Загружаем точный актуальный URL, который уже успешно загружен в сетке
+      modalImg.dataset.base = 'photo' + currentIndex;
+      delete modalImg.dataset.candidates;
+      delete modalImg.dataset.candIndex;
+
+      // Берем рабочий адрес прямо из карточки галереи
       if (currentGalleryImg && currentGalleryImg.currentSrc) {
         modalImg.src = currentGalleryImg.currentSrc;
       } else {

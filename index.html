@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="ru" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Вячеслав Ларионов (Shaman) | Художник, Фотограф | Архангельск</title>
+  <meta name="description" content="Официальный сайт художника и концептуального фотографа Вячеслава Ларионова (Shaman). Этнофутуризм, сакральная пластика, мистерии Русского Севера, проекты «Новые Скифы» и «Звозландия».">
+  <meta name="keywords" content="Вячеслав Ларионов, фотограф Архангельск, этнофутуризм, Звозландия, Новые Скифы, концептуальная фотография, Русский Север, сакральный кадр">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://larionovshaman.netlify.app/">
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://larionovshaman.netlify.app/">
+  <meta property="og:title" content="Вячеслав Ларионов — Этнофутуризм &amp; Сакральный Кадр Севера">
+  <meta property="og:description" content="Галерея авторских фоторабот, арт-проекты «Новые Скифы», «Звозландия», «Солнцеворот». Архангельск.">
+  <meta property="og:image" content="photo1.jpg">
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;900&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            cinzel: ['"Cinzel"', 'serif'],
+            sans: ['"Montserrat"', 'sans-serif'],
+          },
+          colors: {
+            bgDark: '#0a0d10',
+            cardDark: '#12161b',
+            accentGold: '#d4af37',
+            accentBronze: '#b87333',
+            nordicMist: '#b0bcc8'
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      background-color: #0a0d10;
+      color: #e6edf3;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+    }
+    .heading-gold {
+      font-family: 'Cinzel', serif;
+      background: linear-gradient(135deg, #ffffff 0%, #d4af37 50%, #aa7c11 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .glass-panel {
+      background: rgba(18, 22, 27, 0.9);
+      backdrop-filter: blur(16px);
+      border: 1px solid rgba(212, 175, 55, 0.2);
+    }
+    .photo-card {
+      transition: all 0.35s ease-out;
+      height: 420px;
+    }
+    .photo-card:hover {
+      transform: translateY(-8px);
+      border-color: rgba(212, 175, 55, 0.7);
+      box-shadow: 0 20px 40px rgba(0,0,0,0.9), 0 0 20px rgba(212, 175, 55, 0.25);
+    }
+    .bg-pattern {
+      background-image: radial-gradient(rgba(212, 175, 55, 0.08) 1.5px, transparent 1.5px);
+      background-size: 36px 36px;
+    }
+  </style>
+</head>
+<body class="antialiased selection:bg-accentGold selection:text-black bg-pattern">
+
+  <!-- Header -->
+  <header class="fixed top-0 left-0 right-0 z-50 glass-panel border-b border-white/10">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+      <a href="#hero" class="flex items-center gap-4">
+        <span class="text-2xl sm:text-3xl font-cinzel font-bold text-accentGold tracking-widest uppercase">LARIONOV</span>
+        <span class="text-xs uppercase tracking-widest text-nordicMist border-l-2 border-white/20 pl-4 hidden md:inline-block font-semibold">SHAMAN • АРХАНГЕЛЬСК</span>
+      </a>
+      <nav class="flex items-center space-x-6 sm:space-x-8 text-xs sm:text-sm uppercase tracking-widest text-gray-200 font-semibold">
+        <a href="#about" class="hover:text-accentGold transition duration-300 hidden md:inline-block">Об авторе</a>
+        <a href="#projects" class="hover:text-accentGold transition duration-300 hidden md:inline-block">Проекты</a>
+        <a href="#gallery" class="hover:text-accentGold transition duration-300">Галерея (20)</a>
+        <a href="https://vk.ru/larionovshaman" target="_blank" rel="noopener noreferrer" class="px-5 py-2.5 bg-accentGold text-black font-bold text-xs uppercase tracking-wider hover:bg-yellow-400 transition duration-300 rounded shadow-lg">VK Профиль</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero" class="relative min-h-screen flex items-center justify-center pt-28 pb-16 px-6 overflow-hidden">
+    <div class="max-w-5xl mx-auto text-center z-10">
+      <div class="inline-flex items-center gap-3 px-5 py-2 rounded-full border border-accentGold/40 bg-accentGold/10 text-accentGold text-xs sm:text-sm font-semibold uppercase tracking-[0.25em] mb-8 shadow-lg">
+        <span>⚡ Этнофутуризм • Русский Север • Сакральный Кадр</span>
+      </div>
+      <h1 class="text-5xl sm:text-7xl md:text-8xl heading-gold font-bold tracking-tight mb-8 uppercase leading-none">
+        ВЯЧЕСЛАВ ЛАРИОНОВ
+      </h1>
+      <p class="text-xl sm:text-2xl text-nordicMist font-light max-w-4xl mx-auto leading-relaxed mb-12">
+        «Художник сродни шаману: через объектив, пластику и свет он связывает мир первозданной природы с духом современности».
+      </p>
+      <div class="flex flex-wrap justify-center gap-5">
+        <a href="#gallery" class="px-8 py-4 bg-accentGold text-black font-bold text-xs sm:text-sm uppercase tracking-widest hover:bg-yellow-400 transition duration-300 shadow-xl shadow-accentGold/20 rounded">
+          Смотреть все 20 работ
+        </a>
+        <a href="https://vk.ru/larionovshaman" target="_blank" rel="noopener noreferrer" class="px-8 py-4 glass-panel border border-white/30 text-white font-semibold text-xs sm:text-sm uppercase tracking-widest hover:border-accentGold hover:text-accentGold transition duration-300 rounded">
+          vk.ru/larionovshaman ↗
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bio Section -->
+  <section id="about" class="py-24 px-6 max-w-7xl mx-auto border-t border-white/10">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+      <div class="lg:col-span-5 relative">
+        <div class="w-full h-[480px] rounded-2xl overflow-hidden glass-panel p-3 shadow-2xl bg-cardDark">
+          <img src="avatar.jpg" alt="Вячеслав Ларионов" class="w-full h-full object-cover rounded-xl filter grayscale contrast-125 hover:grayscale-0 transition duration-700" onerror="handleImgError(this)">
+        </div>
+        <div class="absolute -bottom-6 -right-2 glass-panel p-5 rounded-xl border border-accentGold/50 shadow-2xl">
+          <p class="text-xs uppercase tracking-widest text-nordicMist font-semibold">Арт-директор</p>
+          <p class="text-base sm:text-lg font-cinzel text-accentGold font-bold">«Новые Скифы» / «Звозландия»</p>
+        </div>
+      </div>
+      <div class="lg:col-span-7 lg:pl-8">
+        <span class="text-xs uppercase tracking-widest text-accentBronze font-bold">Философия автора</span>
+        <h2 class="text-3xl sm:text-4xl md:text-5xl font-cinzel text-white font-bold mt-3 mb-6 leading-tight">
+          Атмосфера, фактура и мистерия Севера
+        </h2>
+        <div class="space-y-5 text-nordicMist text-base sm:text-lg font-light leading-relaxed">
+          <p>
+            Вячеслав Ларионов — архангельский художник, концептуальный фотограф и визуальный исследователь. Его творчество неразрывно связано с уникальной атмосферой Беломорья, скифской пластикой и древними архетипами поморской культуры.
+          </p>
+          <p>
+            Каждая серия кадров — это не просто репортаж или постановка, а исследование взаимодействия человека с северным светом, природными стихиями и памятью земли.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-2 sm:grid-cols-3 gap-6 pt-8 mt-8 border-t border-white/15">
+          <div>
+            <span class="block text-accentGold font-cinzel font-bold text-xl">Архангельск</span>
+            <span class="text-xs text-nordicMist">Мастерская & Локация</span>
+          </div>
+          <div>
+            <span class="block text-accentGold font-cinzel font-bold text-xl">20 фоторабот</span>
+            <span class="text-xs text-nordicMist">В актуальной коллекции</span>
+          </div>
+          <div>
+            <span class="block text-accentGold font-cinzel font-bold text-xl">Звозландия</span>
+            <span class="text-xs text-nordicMist">Культовая резиденция</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-24 px-6 bg-cardDark/60 border-t border-white/10">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs uppercase tracking-widest text-accentBronze font-bold">Арт-направления</span>
+        <h2 class="text-3xl sm:text-5xl font-cinzel text-white mt-3 mb-4 font-bold">Ключевые проекты</h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="glass-panel p-8 rounded-2xl border border-white/15 flex flex-col justify-between hover:border-accentGold/40 transition">
+          <div>
+            <span class="text-3xl font-cinzel text-accentGold/70 font-bold">01</span>
+            <h3 class="text-2xl font-cinzel text-white mt-4 mb-3 font-bold">«Новые Скифы»</h3>
+            <p class="text-nordicMist text-sm leading-relaxed font-light">
+              Арт-дирекция, визуальная идентичность, скифская пластика костюма и фотообраза.
+            </p>
+          </div>
+        </div>
+
+        <div class="glass-panel p-8 rounded-2xl border border-accentGold/50 shadow-2xl shadow-accentGold/10 flex flex-col justify-between hover:border-accentGold transition">
+          <div>
+            <span class="text-3xl font-cinzel text-accentGold font-bold">02</span>
+            <h3 class="text-2xl font-cinzel text-white mt-4 mb-3 font-bold">«Звозландия»</h3>
+            <p class="text-nordicMist text-sm leading-relaxed font-light">
+              Ленд-арт, кинематографические хроники и перформансы на берегах Северной Двины.
+            </p>
+          </div>
+        </div>
+
+        <div class="glass-panel p-8 rounded-2xl border border-white/15 flex flex-col justify-between hover:border-accentGold/40 transition">
+          <div>
+            <span class="text-3xl font-cinzel text-accentGold/70 font-bold">03</span>
+            <h3 class="text-2xl font-cinzel text-white mt-4 mb-3 font-bold">«Солнцеворот»</h3>
+            <p class="text-nordicMist text-sm leading-relaxed font-light">
+              Мистериальные съемки, полярные белые ночи и циклы природной светотени.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Photo Gallery (20 Photos) -->
+  <section id="gallery" class="py-24 px-6 max-w-7xl mx-auto border-t border-white/10">
+    <div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+      <div>
+        <span class="text-xs uppercase tracking-widest text-accentGold font-bold">Авторская галерея</span>
+        <h2 class="text-3xl sm:text-5xl font-cinzel text-white mt-2 font-bold">Все 20 фоторабот</h2>
+      </div>
+      <p class="text-nordicMist text-sm font-light mt-4 md:mt-0">
+        Нажмите на снимок для полноэкранного просмотра (листайте ❮ ❯).
+      </p>
+    </div>
+
+    <!-- 20 Photo Cards Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
+      
+      <!-- Карточки 1-20 -->
+      <div class="photo-card glass-panel rounded-2xl overflow-hidden cursor-pointer relative group bg-cardDark" onclick="openModal(1)">
+        <img src="photo1.jpg" alt="Работа 1" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" onerror="handleImgError(this)">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-6">
+          <span class="text-accentGold text-sm uppercase tracking-widest font-bold">Работа #1</span>
+        </div>
+      </div>
+
+      <div class="photo-card glass-panel rounded-2xl overflow-hidden cursor-pointer relative group bg-cardDark" onclick="openModal(2)">
+        <img src="photo2.jpg" alt="Работа 2" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" onerror="handleImgError(this)">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-6">
+          <span class="text-accentGold text-sm uppercase tracking-widest font-bold">Работа #2</span>
+        </div>
+      </div>
+
+      <div class="photo-card glass-panel rounded-2xl overflow-hidden cursor-pointer relative group bg-cardDark" onclick="openModal(3)">
+        <img src="photo3.jpg" alt="Работа 3" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" onerror="handleImgError(this)">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-6">
+          <span class="text-accentGold text-sm uppercase tracking-widest font-bold">Работа #3</span>
+        </div>
+      </div>
+
+      <div class="photo-card glass-panel rounded-2xl overflow-hidden cursor-pointer relative group bg-cardDark" onclick="openModal(4)">
+        <img src="photo4.jpg" alt="Работа 4" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" onerror="handleImgError(this)">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-6">
+          <span class="text-accentGold text-sm uppercase tracking-widest font-bold">Работа #4</span>
+        </div>
+      </div>
+
+      <div class="photo-card glass-panel rounded-2xl overflow-hidden cursor-pointer relative group bg-cardDark" onclick="openModal(5)">
+        <img src="photo5.jpg" alt="Работа 5" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" onerror="handleImgError(this)">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-6">
+          <span class="text-accentGold text-sm uppercase tracking-widest font-bold">Работа #5</span>
+        </div>
+      </div>
+
+      <div class="photo-card glass-panel rounded-2xl overflow-hidden cursor-pointer relative group bg-cardDark" onclick="openModal(6)">
+        <img src="photo6.jpg" alt="Работа 6" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" onerror="handleImgError(this)">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-6">
+          <span class="text-accentGold text-sm uppercase tracking-widest font-bold">Работа #6</span>
+        </div>
+      </div>
+
+      <div class="photo-card glass-panel rounded-2xl overflow-hidden cursor-pointer relative group bg-cardDark" onclick="openModal(7)">
+        <img src="photo7.jpg" alt="Работа 7" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" onerror="handleImgError(this)">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-6">
+          <span class="text-accentGold text-sm uppercase tracking-widest font-bold">Работа #7</span>
+        </div>
+      </div>
+
+      <div class="photo-card glass-panel rounded-2xl overflow-hidden cursor-pointer relative group bg-cardDark" onclick="openModal(8)">
+        <img src="photo8.jpg" alt="Работа 8" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" onerror="handleImgError(this)">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-6">
+          <span class="text-accentGold text-sm uppercase tracking-widest font-bold">Работа #8</span>
+        </div>
+      </div>
+
+      <div class="photo-card glass-panel rounded-2xl overflow-hidden cursor-pointer relative group bg-cardDark" onclick="openModal(9)">
+        <img src="photo9.jpg" alt="Работа 9" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" onerror="handleImgError(this)">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-6">
+          <span class="text-accentGold text-sm uppercase tracking-widest font-bold">Работа #9</span>
+        </div>
+      </div>
+
+      <div class="photo-card glass-panel rounded-2xl overflow-hidden cursor-pointer relative group bg-cardDark" onclick="openModal(10)">
+        <img src="photo10.jpg" alt="Работа 10" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" onerror="handleImgError(this)">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-6">
+          <span class="text-accentGold text-sm uppercase tracking-widest font-bold">Работа #10</span>
+        </div>
+      </div>
+
+      <div class="photo-card glass-panel rounded-2xl overflow-hidden cursor-pointer relative group bg-cardDark" onclick="openModal(11)">
+        <img src="photo11.jpg" alt="Работа 11" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" onerror="handleImgError(this)">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-6">
+          <span class="text-accentGold text-sm uppercase tracking-widest font-bold">Работа #11</span>
+        </div>
+      </div>
+
+      <div class="photo-card glass-panel rounded-2xl overflow-hidden cursor-pointer relative group bg-cardDark" onclick="openModal(12)">
+        <img src="photo12.jpg" alt="Работа 12" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" onerror="handleImgError(this)">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-6">
+          <span class="text-accentGold text-sm uppercase tracking-widest font-bold">Работа #12</span>
+        </div>
+      </div>
+
+      <div class="photo-card glass-panel rounded-2xl overflow-hidden cursor-pointer relative group bg-cardDark" onclick="openModal(13)">
+        <img src="photo13.jpg" alt="Работа 13" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" onerror="handleImgError(this)">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-6">
+          <span class="text-accentGold text-sm uppercase tracking-widest font-bold">Работа #13</span>
+        </div>
+      </div>
+
+      <div class="photo-card glass-panel rounded-2xl overflow-hidden cursor-pointer relative group bg-cardDark" onclick="openModal(14)">
+        <img src="photo14.jpg" alt="Работа 14" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" onerror="handleImgError(this)">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-6">
+          <span class="text-accentGold text-sm uppercase tracking-widest font-bold">Работа #14</span>
+        </div>
+      </div>
+
+      <div class="photo-card glass-panel rounded-2xl overflow-hidden cursor-pointer relative group bg-cardDark" onclick="openModal(15)">
+        <img src="photo15.jpg" alt="Работа 15" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" onerror="handleImgError(this)">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-6">
+          <span class="text-accentGold text-sm uppercase tracking-widest font-bold">Работа #15</span>
+        </div>
+      </div>
+
+      <div class="photo-card glass-panel rounded-2xl overflow-hidden cursor-pointer relative group bg-cardDark" onclick="openModal(16)">
+        <img src="photo16.jpg" alt="Работа 16" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" onerror="handleImgError(this)">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-6">
+          <span class="text-accentGold text-sm uppercase tracking-widest font-bold">Работа #16</span>
+        </div>
+      </div>
+
+      <div class="photo-card glass-panel rounded-2xl overflow-hidden cursor-pointer relative group bg-cardDark" onclick="openModal(17)">
+        <img src="photo17.jpg" alt="Работа 17" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" onerror="handleImgError(this)">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-6">
+          <span class="text-accentGold text-sm uppercase tracking-widest font-bold">Работа #17</span>
+        </div>
+      </div>
+
+      <div class="photo-card glass-panel rounded-2xl overflow-hidden cursor-pointer relative group bg-cardDark" onclick="openModal(18)">
+        <img src="photo18.jpg" alt="Работа 18" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" onerror="handleImgError(this)">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-6">
+          <span class="text-accentGold text-sm uppercase tracking-widest font-bold">Работа #18</span>
+        </div>
+      </div>
+
+      <div class="photo-card glass-panel rounded-2xl overflow-hidden cursor-pointer relative group bg-cardDark" onclick="openModal(19)">
+        <img src="photo19.jpg" alt="Работа 19" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" onerror="handleImgError(this)">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-6">
+          <span class="text-accentGold text-sm uppercase tracking-widest font-bold">Работа #19</span>
+        </div>
+      </div>
+
+      <div class="photo-card glass-panel rounded-2xl overflow-hidden cursor-pointer relative group bg-cardDark" onclick="openModal(20)">
+        <img src="photo20.jpg" alt="Работа 20" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition duration-700" onerror="handleImgError(this)">
+        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition duration-300 flex items-end p-6">
+          <span class="text-accentGold text-sm uppercase tracking-widest font-bold">Работа #20</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-24 px-6 max-w-5xl mx-auto text-center border-t border-white/10">
+    <span class="text-xs uppercase tracking-widest text-accentBronze font-bold">Связь с автором</span>
+    <h2 class="text-3xl sm:text-5xl font-cinzel text-white mt-2 mb-6 font-bold">Сотрудничество &amp; Выставки</h2>
+    <p class="text-nordicMist font-light max-w-xl mx-auto mb-10 text-sm sm:text-base leading-relaxed">
+      Для организации выставок, совместных арт-резиденций, авторских фотосессий и приобретения работ:
+    </p>
+
+    <!-- Кнопка VK -->
+    <div class="inline-flex items-center justify-center mb-16">
+      <a href="https://vk.ru/larionovshaman" target="_blank" rel="noopener noreferrer" class="px-8 py-4 bg-[#0077ff]/20 hover:bg-[#0077ff] text-white border border-[#0077ff]/50 rounded-xl transition duration-300 flex items-center gap-3 text-sm font-semibold shadow-xl">
+        <svg class="w-5 h-5 fill-current" viewBox="0 0 24 24"><path d="M15.684 0H8.316C3.592 0 0 3.592 0 8.316v7.368C0 20.408 3.592 24 8.316 24h7.368C20.408 24 24 20.408 24 15.684V8.316C24 3.592 20.408 0 15.684 0zm4.27 17.072h-1.896c-.717 0-.936-.57-2.223-1.86-1.121-1.096-1.62-1.238-1.896-1.238-.387 0-.498.11-.498.644v1.656c0 .459-.147.798-1.344.798-1.986 0-4.195-1.2-5.748-3.44-2.336-3.292-2.98-5.775-2.98-6.282 0-.276.11-.533.644-.533h1.896c.478 0 .662.22.846.736.938 2.686 2.502 5.04 3.147 5.04.239 0 .35-.11.35-.717V9.756c-.074-1.288-.754-1.398-.754-1.858 0-.22.184-.44.478-.44h2.98c.404 0 .552.22.552.7v3.754c0 .404.184.552.313.552.239 0 .44-.147.883-.588 1.362-1.526 2.335-3.864 2.335-3.864.129-.276.35-.552.828-.552h1.896c.57 0 .699.294.57.7-.24 1.103-2.556 4.372-2.666 4.574-.24.368-.33.533 0 .975.24.33 1.03 1.012 1.562 1.62 1.012 1.14 1.784 2.112 1.987 2.774.202.662-.11.975-.68.975z"/></svg>
+        ВКонтакте: vk.ru/larionovshaman
+      </a>
+    </div>
+
+    <!-- Счетчик просмотров -->
+    <div class="mb-10 inline-flex items-center gap-3 px-5 py-2.5 rounded-full border border-accentGold/25 bg-cardDark/80 backdrop-blur-md shadow-lg">
+      <span class="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
+      <span class="text-xs uppercase tracking-widest text-nordicMist font-medium">Просмотры галереи:</span>
+      <span id="visit-counter" class="text-sm font-cinzel font-bold text-accentGold tracking-wider min-w-[2ch]">...</span>
+    </div>
+
+    <footer class="pt-12 border-t border-white/10 text-xs text-nordicMist flex flex-col sm:flex-row justify-between items-center gap-4">
+      <div>© 2026 Вячеслав Ларионов (Shaman). Все права защищены.</div>
+      <div>Архангельск • Звозландия • Русский Север</div>
+    </footer>
+  </section>
+
+  <!-- Lightbox Modal -->
+  <div id="modal" class="fixed inset-0 z-50 bg-black/95 hidden items-center justify-center p-4 backdrop-blur-lg" onclick="handleBackdropClick(event)">
+    <div class="relative max-w-5xl w-full flex flex-col items-center">
+      <button onclick="prevPhoto(event)" class="absolute left-2 sm:-left-16 top-1/2 -translate-y-1/2 text-white hover:text-accentGold text-4xl p-3 z-10 transition">
+        &#10094;
+      </button>
+      <button onclick="nextPhoto(event)" class="absolute right-2 sm:-right-16 top-1/2 -translate-y-1/2 text-white hover:text-accentGold text-4xl p-3 z-10 transition">
+        &#10095;
+      </button>
+      
+      <img id="modalImg" src="" alt="Work" class="max-h-[80vh] max-w-full object-contain rounded-xl border border-accentGold/30 shadow-2xl">
+      <div id="modalCaption" class="text-accentGold font-cinzel text-lg mt-4 tracking-widest font-semibold"></div>
+      
+      <button onclick="closeModal()" class="absolute -top-12 right-0 text-white text-3xl font-light hover:text-accentGold transition p-2">&times;</button>
+    </div>
+  </div>
+
+  <!-- JavaScript -->
+  <script>
+    let currentIndex = 1;
+    const totalPhotos = 20;
+
+    // Автоматическая проверка регистра расширений файлов
+    function handleImgError(img) {
+      if (img.src.includes('.jpg')) {
+        img.src = img.src.replace('.jpg', '.JPG');
+      } else if (img.src.includes('.JPG')) {
+        img.src = img.src.replace('.JPG', '.jpeg');
+      }
+    }
+
+    function openModal(id) {
+      currentIndex = id;
+      updateModal();
+      const modal = document.getElementById('modal');
+      modal.classList.remove('hidden');
+      modal.classList.add('flex');
+      document.addEventListener('keydown', handleKeyDown);
+    }
+
+    function updateModal() {
+      const modalImg = document.getElementById('modalImg');
+      const modalCaption = document.getElementById('modalCaption');
+      modalImg.src = 'photo' + currentIndex + '.jpg';
+      modalCaption.innerText = 'Работа #' + currentIndex + ' из ' + totalPhotos;
+    }
+
+    function prevPhoto(e) {
+      if (e) e.stopPropagation();
+      currentIndex = currentIndex > 1 ? currentIndex - 1 : totalPhotos;
+      updateModal();
+    }
+
+    function nextPhoto(e) {
+      if (e) e.stopPropagation();
+      currentIndex = currentIndex < totalPhotos ? currentIndex + 1 : 1;
+      updateModal();
+    }
+
+    function closeModal() {
+      const modal = document.getElementById('modal');
+      modal.classList.add('hidden');
+      modal.classList.remove('flex');
+      document.removeEventListener('keydown', handleKeyDown);
+    }
+
+    function handleBackdropClick(e) {
+      if (e.target.id === 'modal') {
+        closeModal();
+      }
+    }
+
+    function handleKeyDown(e) {
+      if (e.key === 'Escape') closeModal();
+      if (e.key === 'ArrowLeft') prevPhoto();
+      if (e.key === 'ArrowRight') nextPhoto();
+    }
+  </script>
+
+  <!-- Visit Counter -->
+  <script>
+    (function() {
+      const counterEl = document.getElementById('visit-counter');
+      const namespace = 'larionovshaman-site';
+      const key = 'visits';
+
+      fetch(`https://api.counterapi.dev/v1/${namespace}/${key}/up`)
+        .then(response => response.json())
+        .then(data => {
+          if (data && typeof data.count !== 'undefined') {
+            counterEl.innerText = data.count.toLocaleString('ru-RU');
+          } else {
+            fallbackLocalCounter();
+          }
+        })
+        .catch(err => {
+          fallbackLocalCounter();
+        });
+
+      function fallbackLocalCounter() {
+        let count = localStorage.getItem('site_views') || 1;
+        count = parseInt(count, 10) + 1;
+        localStorage.setItem('site_views', count);
+        counterEl.innerText = count.toLocaleString('ru-RU');
+      }
+    })();
+  </script>
+</body>
+</html>
